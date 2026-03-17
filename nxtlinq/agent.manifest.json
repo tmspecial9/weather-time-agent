@@ -5,10 +5,10 @@
     "tool:get_weather",
     "tool:get_time"
   ],
-  "issuedAt": 1773781950,
+  "issuedAt": 1773782127,
   "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAahKvav3GvHbAEe4UWhhehoK+mkJUZsPF7on5MqE/LC8=\n-----END PUBLIC KEY-----",
-  "contentHash": "68fcf9dd09992309ff6e931ea0ebb45ea163ec74e5a2c12b97bd27ac7a8b42bf",
-  "artifactHash": "48c32b3d922c39371b2cf04b15021e76083c84f973ba6ca0f54692dd3a2e785d",
+  "contentHash": "33110839ecd3c291abf4c1a2725a54f2d6116e41ab563b5da1b66687a4736ef3",
+  "artifactHash": "9ab8c17d084e59ebf0183822c816c1b55f0b23f3471c6a341cc5474bb0c78c46",
   "attestCliVersion": "1.0.2",
-  "artifactFileCount": 9
+  "artifactFileCount": 10
 }

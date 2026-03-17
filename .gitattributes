@@ -1,0 +1,2 @@
+# 強制文字檔使用 LF，確保本地與 CI 的 artifact 內容一致
+* text=auto eol=lf
