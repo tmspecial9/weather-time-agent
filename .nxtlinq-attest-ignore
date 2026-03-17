@@ -1,3 +1,5 @@
 # Build output — 不納入 artifact 驗證
 dist
 node_modules
+# Lockfile 會隨依賴更新變動，不納入簽章
+package-lock.json
