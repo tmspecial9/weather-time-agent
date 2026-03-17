@@ -1,5 +1,9 @@
-# Build output — 不納入 artifact 驗證
+# 與 .gitignore 對齊：未提交的檔案/目錄不納入 artifact，避免本地與 CI 不一致
 dist
 node_modules
-# Lockfile 會隨依賴更新變動，不納入簽章
+.env
+.env.local
+*.log
+.DS_Store
 package-lock.json
+nxtlinq/private.key
