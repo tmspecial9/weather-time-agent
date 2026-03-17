@@ -1,0 +1,27 @@
+# 在 CI 中驗證 @nxtlinq/attest 簽章與 artifact 完整性
+# 若 manifest 或程式/設定被竄改，verify 會 exit 1
+name: Attest Verify
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run attest verify
+        run: npm run attest:verify

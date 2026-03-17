@@ -1,0 +1,29 @@
+{
+  "name": "weather-time-agent",
+  "version": "1.0.0",
+  "description": "AI Agent：查詢天氣與時間（OpenAI tool call），經 @nxtlinq/attest 簽章驗證",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "attest:init": "nxtlinq-attest init",
+    "attest:sign": "nxtlinq-attest sign",
+    "attest:verify": "nxtlinq-attest verify",
+    "attest:scope": "nxtlinq-attest scope"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@nxtlinq/attest": "^1.0.2",
+    "dotenv": "^16.4.5",
+    "openai": "^4.73.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.0.0"
+  }
+}

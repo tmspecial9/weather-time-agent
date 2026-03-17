@@ -1,0 +1,3 @@
+# Build output — 不納入 artifact 驗證
+dist
+node_modules
